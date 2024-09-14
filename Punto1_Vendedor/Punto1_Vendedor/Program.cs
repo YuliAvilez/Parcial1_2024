@@ -19,7 +19,6 @@ public class Program
         Console.Write("Ingrese el valor de la tercera venta: $");
         ValorVenta3 = Convert.ToDouble(Console.ReadLine());
 
-        //Calculo de comisiones:
         Comision1 = ValorVenta1 * Comision;
         Comision2 = ValorVenta2 * Comision;
         Comision3 = ValorVenta3 * Comision;
