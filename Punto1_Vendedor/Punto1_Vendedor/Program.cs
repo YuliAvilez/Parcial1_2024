@@ -2,9 +2,13 @@
 
 public class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
-        double sueldoBase = 2000000, Comisión = 0.10, VlorTotalVenta, ValorVenta1, ValorVenta2,ValorVenta3;
+        //Asignación de Variables
+        double sueldoBase = 2000000, Comision = 0.10, Comision1 = 0, Comision2 = 0, Comision3, TotalComisiones, VlorTotalVenta, ValorVenta1, ValorVenta2,ValorVenta3, VentaMayor, PromedioComisiones, totalRecibido;
+        double Beneficioextra = 100.000, objetivo = 1000000;
+        bool False;
+
 
         Console.Write("Ingrese el valor de la primera venta: $");
         ValorVenta1 = Convert.ToDouble(Console.ReadLine());
@@ -16,9 +20,17 @@ public class Program
         ValorVenta3 = Convert.ToDouble(Console.ReadLine());
 
         //Calculo de comisiones:
+        Comision1 = ValorVenta1 * Comision;
+        Comision2 = ValorVenta2 * Comision;
+        Comision3 = ValorVenta3 * Comision;
+
+        TotalComisiones = Comision1 + Comision2 + Comision3;  
         
-        Comisión * ValorVenta2;
-        Comisión * ValorVenta3;
+        totalRecibido = sueldoBase + TotalComisiones;
+
+
+
+        
 
 
 
